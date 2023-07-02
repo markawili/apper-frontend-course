@@ -130,6 +130,52 @@
     border: none;
 }
 
+.categories {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.card {
+    background-color: #181818;
+    border-radius: 0.3em;
+    width: 12em;
+    height: 17.6em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5em;
+}
+
+.card-img {
+    flex-grow: 1;
+    border: 1px solid white;
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+.card-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 .page-footer {
     background-image: linear-gradient(90deg,#af2896,#509bf5);
     height: 4em;
