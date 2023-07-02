@@ -73,6 +73,21 @@
     margin-bottom: 1.25em;
 }
 
+.library-footer {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    padding: 1em;
+}
+
+.btn.footer {
+    width: fit-content;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
 .btn {
     padding: 0.5em 1em;
     /* background-color: #fff; */
