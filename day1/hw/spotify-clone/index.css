@@ -130,6 +130,11 @@
     border: none;
 }
 
+.btn.sign-up {
+    background-color: transparent;
+    color: #a7a7a7;
+}
+
 .categories {
     padding-top: 1em;
     display: flex;
@@ -192,4 +197,8 @@
 
 .page-footer > button {
     border: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
