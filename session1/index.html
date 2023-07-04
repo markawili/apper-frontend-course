@@ -4,46 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css-reset.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Spotify Clone</title>
 </head>
 <body>
-    <div class="container">
-        <div class="page-content">
-            <div class="sidebar">
-                <div class="sidebar-links box-gray">
-                    <div class="home">
-                        <div class="home-icon">
-                            <h3>Home Icon</h3>
-                        </div>
-                        <div class="home-text">
-                            <h3>Home</h3>
-                        </div>
-                    </div>
-                    <div class="search">
-                        <div class="search-icon">
-                            <h3>Search Icon</h3>
-                        </div>
-                        <div class="search-text">
-                            <h3>Search</h3>
-                        </div>
-                    </div>
+    <div class="wrapper">
+        <div class="grid-container">
+            <div class="grid-item grid-item-1 sidebar sidebar-nav">
+                <div class="sidebar-nav-tab">
+                    <img class="sidebar-icon" src="" alt="Home">
+                    <h3>Home</h3>
                 </div>
-                <div class="library-container box-gray">
-                    <div class="library-header">
-                        <div class="library-header-icon-group">
-                            <div class="library-icon">
-                                <h3>Library Icon</h3>
-                            </div>
-                            <div class="library-text">
-                                <h3>Your Library</h3>
-                            </div>
-                        </div>
-                        <div class="library-add">
-                            <h2>+</h2>
-                        </div>
-                    </div>
-                    <div class="library-content">
+                <div class="sidebar-nav-tab">
+                    <img class="sidebar-icon" src="" alt="Search">
+                    <h3>Search</h3>
+                </div>
+            </div>
+            <div class="grid-item grid-item-2 sidebar sidebar-library">
+                <div class="sidebar-library-header">
+                    <img class="sidebar-icon" src="" alt="Library">
+                    <h3>Your Library</h3>
+                    <h2 class="sidebar-library-add">+</h2>
+                </div>
+                <div class="sidebar-library-box">
+                    <div class="sidebar-library-content sidebar-library-playlist">
                         <h4>Create your first playlist</h2>
                         <p>It's easy, we'll help you</p>
                         <button class="btn" type="button">
@@ -52,7 +36,7 @@
                             </strong>
                         </button>
                     </div>
-                    <div class="library-content">
+                    <div class="sidebar-library-content sidebar-library-podcast">
                         <h4>Let's find some podcasts to follow</h2>
                         <p>We'll keep you updated on new episodes</p>
                         <button class="btn" type="button">
@@ -61,24 +45,26 @@
                             </strong>
                         </btn>
                     </div>
-                    <div class="library-footer">
-                        <button class="btn footer" type="button">
-                            <h5>English</h5>
-                        </button>
-                    </div>
+                </div>
+                <div class="sidebar-library-links">
+                    <a class="cookies-text" href="">Cookies</a>
+                    <button class="btn language" type="button">
+                        <img class="img language-select" src="" alt=" ">
+                        <h5>English</h5>
+                    </button>
                 </div>
             </div>
-            <div class="main-page box-gray">
-                <div class="nav-bar">
+            <div class="grid-item grid-item-3 main-page">
+                <div class="main-page-nav">
                     <div class="nav-btns">
                         <button class="btn nav" type="button">
-                            <strong><</strong>
+                            <
                         </button>
                         <button class="btn nav" type="button">
-                            <strong>></strong>
+                            >
                         </button>
                     </div>
-                    <div class="authentication-btns">
+                    <div class="auth-btns">
                         <button class="btn sign-up" type="button">
                             <strong>Sign up</strong>
                         </button>
@@ -141,17 +127,19 @@
                 </div>
             </div>
         </div>
-        <div class="page-footer">
-            <div class="page-footer-text">
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
                 <h5>PREVIEW OF SPOTIFY</h5>
                 <h4>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed</h4>
             </div>
-            <button class="btn" type="button">
+            <button class="btn footer" type="button">
                 <strong>
-                    Browse podcasts
+                    Sign up for free
                 </strong>
             </btn>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
